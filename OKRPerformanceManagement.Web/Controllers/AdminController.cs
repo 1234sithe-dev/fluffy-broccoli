@@ -459,4 +459,22 @@ namespace OKRPerformanceManagement.Web.Controllers
 
         public int? RoleId { get; set; }
     }
+
+
+    public class CreateRoleViewModel
+    {
+        [Required]
+        [StringLength(100)]
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string Description { get; set; }
+
+        [Required]
+        
+        public bool isActive { get; set; }
+
+       
+    }
 }
